@@ -46,7 +46,7 @@ class Inchoo_USDisableRegions_Model_Resource_Region_Collection extends Mage_Dire
 
         if(!Mage::app()->getStore()->isAdmin() && Mage::getDesign()->getArea() != 'adminhtml') {
 
-            if($countryId = "US" || is_array($countryId) && implode($countryId) == "US") {
+            if($countryId == "US" || is_array($countryId) && implode($countryId) == "US") {
                 $this->addRegionNameFilter(explode(",", $allowedRegions));
             }
         }
