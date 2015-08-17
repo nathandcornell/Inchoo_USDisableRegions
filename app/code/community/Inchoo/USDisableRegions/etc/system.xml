@@ -37,7 +37,12 @@
         <general translate="label" module="USDisableRegions">
             <groups>
                 <enabled_regions translate="label">
-                    <label>Enabled regions</label>
+                    <label>Enabled USA regions</label>
+                    <comment>
+                      Shipping will be restricted to only the highlighted regions. 
+                      <![CDATA[<br />]]>
+                      Hold CTRL/Command to select multiple regions, or to deselect a region
+                    </comment>
                     <frontend_type>text</frontend_type>
                     <sort_order>2</sort_order>
                     <show_in_default>1</show_in_default>

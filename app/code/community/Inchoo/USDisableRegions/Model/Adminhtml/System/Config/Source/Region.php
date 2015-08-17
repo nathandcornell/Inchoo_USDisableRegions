@@ -38,7 +38,7 @@ class Inchoo_USDisableRegions_Model_Adminhtml_System_Config_Source_Region {
 
         foreach(Mage::getModel('directory/region_api')->items("US") as $region) {
 
-            $allowedCountries[] = array('value' => $region["name"], 'label' =>$region["name"]);
+            $allowedRegions[] = array('value' => $region["code"], 'label' =>$region["name"]);
 
         }
         return $allowedRegions;
